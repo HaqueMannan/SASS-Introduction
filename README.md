@@ -1,8 +1,6 @@
 # SASS-Introduction
 
-=======================================================================
-Introduction to SASS
-=======================================================================
+<h1><u>Introduction to SASS</u></h1>
 
 Please view the SASS Introduction.pdf document for a beginner's guide to all thing SASS.
 
