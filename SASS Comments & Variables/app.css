@@ -1,0 +1,31 @@
+/* CSS Comment - this will appear in the compiled .css file (public comments available to those who read your css file through the browser). */
+header h1 {
+  font-size: 18px;
+  width: 760px;
+  padding: 40px;
+  margin: 60px auto;
+  box-sizing: border-box;
+  background: #333;
+  color: white;
+  text-align: center; }
+
+body {
+  background: #d2e1dd;
+  color: #333;
+  font-family: "Andale Mono", monospace;
+  font-size: 14px; }
+
+article {
+  background: white;
+  width: 760px;
+  margin: -60px auto 0;
+  padding: 40px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: -2; }
+
+footer {
+  font-size: 14px;
+  text-align: center; }
+
+/*# sourceMappingURL=app.css.map */
