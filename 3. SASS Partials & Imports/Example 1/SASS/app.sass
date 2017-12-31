@@ -1,0 +1,23 @@
+// IMPORT ALL SASS DIRECTORY FILES
+
+// import global variables
+@import "variables"
+
+// The _base partial requires the _variables as a dependency so we must import the variables first.
+@import "reset"
+
+header
+   background: black
+   color: white
+   text-align: center
+
+article
+   h2
+      color:   $brand-colour
+   p
+      color:   $text-colour
+
+footer
+   background: black
+   color: white
+   text-align: center

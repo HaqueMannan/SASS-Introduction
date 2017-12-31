@@ -1,0 +1,25 @@
+// GLOBAL MIXIN
+
+// to add a mixin we add the = sign infront of the mixin name.
+//We add perenthesis () to add in arguments - anything you want to add into the mixin.
+//We can add variable within our mixins to make them more dynamic.
+
+//To call this mixin function within our sass files we would need to add + symbol followed by the mixin name e.g. +rounded-box view the _box.sass file for the example.
+
+//The website caniuse.com to see what properties require vendor prefixes.
+//Note: Border-radius does not require a prefix as most browser can use it but we did it for demonstration purposes.
+
+=rounded-box( $radius, $shadowColour,$grad1, $grad2 )
+   -webkit-border-radius:  $radius
+   -moz-border-radius:     $radius
+   border-radius:          $radius
+
+   -webkit-box-shadow:  0 5px 10px $shadowColour
+   -moz-box-shadow:     0 5px 10px $shadowColour
+   border-box-shadow:   0 5px 10px $shadowColour
+
+   background: #036
+   background: -webkit-linear-gradient($grad1, $grad2)
+   background: -o-linear-gradient($grad1, $grad2)
+   background: -moz-linear-gradient($grad1, $grad2)
+   background: linear-gradient($grad1, $grad2)

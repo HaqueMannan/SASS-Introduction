@@ -1,0 +1,51 @@
+.box {
+  height: 100px;
+  width: 100px;
+  background: #036;
+  display: inline-block;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 5px 10px #555;
+  -moz-box-shadow: 0 5px 10px #555;
+  border-box-shadow: 0 5px 10px #555;
+  background: #036;
+  background: -webkit-linear-gradient(orangered, pink);
+  background: -o-linear-gradient(orangered, pink);
+  background: -moz-linear-gradient(orangered, pink);
+  background: linear-gradient(orangered, pink); }
+
+#box2 {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 5px 10px #000;
+  -moz-box-shadow: 0 5px 10px #000;
+  border-box-shadow: 0 5px 10px #000;
+  background: #036;
+  background: -webkit-linear-gradient(#639, #fc3);
+  background: -o-linear-gradient(#639, #fc3);
+  background: -moz-linear-gradient(#639, #fc3);
+  background: linear-gradient(#639, #fc3); }
+
+#box3 {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 10px #ddd;
+  -moz-box-shadow: 0 5px 10px #ddd;
+  border-box-shadow: 0 5px 10px #ddd;
+  background: #036;
+  background: -webkit-linear-gradient(black, teal);
+  background: -o-linear-gradient(black, teal);
+  background: -moz-linear-gradient(black, teal);
+  background: linear-gradient(black, teal); }
+
+.container {
+  width: 768px;
+  margin: 0, auto;
+  padding: 40px;
+  box-sizing: border-box;
+  background: white; }
+
+/*# sourceMappingURL=app.css.map */

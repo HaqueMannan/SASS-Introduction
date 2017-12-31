@@ -1,0 +1,15 @@
+//BOX Style
+
+.box
+   height: 100px
+   width: 100px
+   background: #036
+   display: inline-block
+   //Box-Mixin - applies to all div with a class of box.
+   +rounded-box(100%, #555, orangered, pink)
+
+#box2
+   +rounded-box(20px, #000, #639, #fc3)
+
+#box3
+   +rounded-box(5px, #ddd, black, teal)

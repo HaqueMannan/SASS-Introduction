@@ -1,0 +1,20 @@
+// IMPORT ALL SASS DIRECTORY FILES
+
+// In contrast to Example 1, the _reset partial has the _variables partial import so we do not include it in the app.sass file. This will still produce the same CSS result as Example 1.
+@import "reset"
+
+header
+   background: black
+   color: white
+   text-align: center
+
+article
+   h2
+      color:   $brand-colour
+   p
+      color:   $text-colour
+
+footer
+   background: black
+   color: white
+   text-align: center
