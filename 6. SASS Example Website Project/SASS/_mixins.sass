@@ -1,0 +1,48 @@
+=banner
+      width: 100%
+      position: relative
+      color: white
+      .banner-content
+            position: absolute
+            top: 50px
+            width: 100%
+
+      img
+            width: 100%
+
+      span
+            font-size: $bannerHeading
+            display: block
+            text-transform: uppercase
+            font-weight: bold
+            +mediaQuery(3000px, 1200px)
+                  font-size: 68px
+
+      span.sub-title
+            font-weight: normal
+            margin-bottom: 30px
+            +mediaQuery(1200px)
+                  max-height: 640px
+                  overflow: hidden
+
+=clearFix
+      &:after
+            content: ""
+            display: block
+            clear: both
+
+=grid($cols, $mgn)
+      float: left
+      width: ((100% - (($cols - 1) * $mgn)) / $cols )
+      margin-right: $mgn
+      margin-bottom: $mgn
+      &:nth-child(#{$cols}n)
+            margin-right: 0
+
+=mediaQuery($width...)
+      @if length($width) == 1
+            @media screen and (max-width: nth($width, 1))
+                  @content
+      @if length($width) == 2
+            @media screen and (max-width: nth($width, 1)) and (min-width: nth($width, 2))
+                  @content
