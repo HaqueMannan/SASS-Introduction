@@ -1,0 +1,20 @@
+.element
+  +grid-visual
+//Visual Grid
+
+.boxes
+    +clearfix
+// +clearfix on the boxes allows the paragraph to become a block item and fall in its own line rather than to the right of the boxes.
+    +outer-container
+
+.box
+    background: tint(orangered, 40%)
+    margin: 20px
+    +size(100px)
+    // +position(absolute, 100px auto auto 200px)
+    float: left
+    //write null to have bourbon output nothing for that style.
+    +grid-column(3)
+
+p
+    font-family: $font-stack-helvetica
